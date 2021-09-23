@@ -1,0 +1,10 @@
+.DS_Store
+
+*.o
+*.out
+*.swp
+*.h.gch
+*TOTO*
+
+libft.a
+main_test.c
