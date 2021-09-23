@@ -1,0 +1,5 @@
+Credentials cache: API:BBD48884-F8A2-4D01-8630-1ADF23126B36
+        Principal: aguiri@42NICE.FR
+
+  Issued                Expires             Flags    Principal
+Sep  6 12:40:30 2021  Sep  6 22:40:18 2021  FPIA   krbtgt/42NICE.FR@42NICE.FR
