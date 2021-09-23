@@ -4,6 +4,8 @@
 *.out
 *.swp
 *.h.gch
+
+v2_*
 *TOTO*
 
 libft.a
