@@ -1,0 +1,12 @@
+.DS_Store
+
+*.o
+*.out
+*.swp
+*.h.gch
+
+v2_*
+*TOTO*
+
+main_test.c
+rush-02
