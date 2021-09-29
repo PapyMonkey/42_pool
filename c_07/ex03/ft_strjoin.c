@@ -6,11 +6,22 @@
 /*   By: aguiri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 13:10:31 by aguiri            #+#    #+#             */
-/*   Updated: 2021/09/20 15:23:21 by aguiri           ###   ########.fr       */
+/*   Updated: 2021/09/29 19:49:17 by aguiri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include <stdlib.h>
+
+int	ft_strcmp(char *s1, char *s2)
+{
+	while (*s1 && *s2 && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
+}
 
 int	ft_strlen(char *str)
 {
@@ -30,12 +41,12 @@ char	*ft_strjoin2(int size, char **strs, char *sep, char *res)
 
 	i = 0;
 	n = 0;
-	while (i < size)
+	while (i < size && ft_strcmp(strs[i], "\0"))
 	{
 		j = 0;
 		while (strs[i][j])
 			res[n++] = strs[i][j++];
-		if (i + 1 != size)
+		if (i + 1 != size && ft_strcmp(strs[i + 1], "\0"))
 		{
 			j = 0;
 			while (sep[j])
@@ -56,8 +67,11 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	tot_size = (size - 1) * ft_strlen(sep);
 	if (size == 0)
 		return (0);
-	while (i++ < size)
+	while (i < size && ft_strcmp(strs[i], "\0"))
+	{
 		tot_size += ft_strlen(strs[i]);
+		i++;
+	}
 	res = malloc(sizeof(char) * tot_size);
 	return (ft_strjoin2(size, strs, sep, res));
 }

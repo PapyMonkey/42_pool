@@ -6,7 +6,7 @@
 /*   By: aguiri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 00:57:30 by aguiri            #+#    #+#             */
-/*   Updated: 2021/09/17 11:47:59 by aguiri           ###   ########.fr       */
+/*   Updated: 2021/09/29 16:25:24 by aguiri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	ft_ultimate_range(int **range, int min, int max)
 {
 	int	i;
-	int	*ptr;
 
 	i = 0;
 	if (min >= max)
