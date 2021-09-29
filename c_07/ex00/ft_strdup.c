@@ -6,7 +6,7 @@
 /*   By: aguiri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 22:38:27 by aguiri            #+#    #+#             */
-/*   Updated: 2021/09/29 16:26:17 by aguiri           ###   ########.fr       */
+/*   Updated: 2021/09/29 22:45:24 by aguiri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,12 @@ char	*ft_strdup(char *src)
 
 	i = 0;
 	len = ft_strlen(src);
-	cpy = malloc(sizeof(char) * len);
+	cpy = malloc(sizeof(char) * (len + 1));
 	while (i < len)
 	{
 		*(cpy + i) = *(src + i);
 		i++;
 	}
+	cpy[len + 1] = '\0';
 	return (cpy);
 }

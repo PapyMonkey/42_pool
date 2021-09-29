@@ -6,11 +6,12 @@
 /*   By: aguiri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/18 13:54:37 by aguiri            #+#    #+#             */
-/*   Updated: 2021/09/20 15:25:11 by aguiri           ###   ########.fr       */
+/*   Updated: 2021/09/29 22:55:19 by aguiri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdlib.h>
 
 int	ft_char_is_separator(char c, char *charset)
 {
@@ -77,8 +78,6 @@ void	ft_write_tab(char **str_split, char *str, char *charset)
 				j++;
 			str_split[n_word] = malloc(sizeof(char) * (j + 1));
 			ft_write_words(str_split[n_word], str + i, charset);
-			if (str_split[n_word] == '\0')
-				printf("ERROR\n");
 			i += j;
 			n_word++;
 		}

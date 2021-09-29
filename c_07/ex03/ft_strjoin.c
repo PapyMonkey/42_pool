@@ -6,7 +6,7 @@
 /*   By: aguiri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 13:10:31 by aguiri            #+#    #+#             */
-/*   Updated: 2021/09/29 19:49:17 by aguiri           ###   ########.fr       */
+/*   Updated: 2021/09/29 22:46:48 by aguiri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 		tot_size += ft_strlen(strs[i]);
 		i++;
 	}
-	res = malloc(sizeof(char) * tot_size);
+	res = malloc(sizeof(char) * (tot_size + 1));
+	res[tot_size] = '\0';
 	return (ft_strjoin2(size, strs, sep, res));
 }
