@@ -8,9 +8,7 @@ You will find here the archives of my projects during my pool at **42 school**. 
 
 ## Projects list
 
-### Common Circle
-
-| PROJECT | LANGUAGE | EXPERIENCE | STATUS | Date of Completion |
+| PROJECT | LANGUAGE | EXPERIENCE | STATUS | DATE OF COMPLETION |
 | ------- | -------- | ---------- | ------ | ------------------ |
 | [Shell 00](./s_00) | Shell | 100 XP | ![s00 grade](https://badge42.herokuapp.com/api/project/aguiri/C%20Piscine%20Shell%2000) | 08/09/2021 |
 | [Shell 01](./s_01) | Shell | 100 XP | ![s01 grade](https://badge42.herokuapp.com/api/project/aguiri/C%20Piscine%20Shell%2001) | 11/09/2021 |
